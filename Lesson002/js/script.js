@@ -141,63 +141,63 @@ console.log(result);
 
 // Код возьмите из предыдущего домашнего задания
 
-let numberOfFilms = '';
-let isCorrect = false;
+// let numberOfFilms = '';
+// let isCorrect = false;
 
-while (!isCorrect) {
-    numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
+// while (!isCorrect) {
+//     numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
 
-    if (numberOfFilms === '' || numberOfFilms === null || numberOfFilms.length > 50) {
-        alert("Произошла ошибка");
-        continue;
-    }
+//     if (numberOfFilms === '' || numberOfFilms === null || numberOfFilms.length > 50) {
+//         alert("Произошла ошибка");
+//         continue;
+//     }
 
-    numberOfFilms = Number(numberOfFilms);
+//     numberOfFilms = Number(numberOfFilms);
 
-    if (numberOfFilms >= 0 && numberOfFilms < 10) {
-        isCorrect = true;
-        alert("Просмотрено довольно мало фильмов");
-    }
-    else if (numberOfFilms >= 10 && numberOfFilms < 30) {
-        isCorrect = true;
-        alert("Вы классический зритель");
-    }
-    else if (numberOfFilms >= 30) {
-        isCorrect = true;
-        alert("Вы киноман");
-    }
-    else {
-        alert("Произошла ошибка");
-    }
+//     if (numberOfFilms >= 0 && numberOfFilms < 10) {
+//         isCorrect = true;
+//         alert("Просмотрено довольно мало фильмов");
+//     }
+//     else if (numberOfFilms >= 10 && numberOfFilms < 30) {
+//         isCorrect = true;
+//         alert("Вы классический зритель");
+//     }
+//     else if (numberOfFilms >= 30) {
+//         isCorrect = true;
+//         alert("Вы киноман");
+//     }
+//     else {
+//         alert("Произошла ошибка");
+//     }
 
-}
+// }
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
-for(let i = 0; i < 2; i++){
-    let lastFilm = prompt('Один из последних просмотренных фильмов?', '');
-    if (lastFilm === '' || lastFilm === null || lastFilm.length > 50) {
-        alert("Произошла ошибка");
-        i--;
-        continue;
-    }
+// for(let i = 0; i < 2; i++){
+//     let lastFilm = prompt('Один из последних просмотренных фильмов?', '');
+//     if (lastFilm === '' || lastFilm === null || lastFilm.length > 50) {
+//         alert("Произошла ошибка");
+//         i--;
+//         continue;
+//     }
 
-    let filmRate = prompt('На сколько оцените его?', '');
-    if (filmRate === '' || filmRate === null || filmRate.length > 50) {
-        alert("Произошла ошибка");
-        i--;
-        continue;
-    }
-    personalMovieDB.movies[lastFilm] = filmRate;
-}
+//     let filmRate = prompt('На сколько оцените его?', '');
+//     if (filmRate === '' || filmRate === null || filmRate.length > 50) {
+//         alert("Произошла ошибка");
+//         i--;
+//         continue;
+//     }
+//     personalMovieDB.movies[lastFilm] = filmRate;
+// }
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
 
 
 //Замыкание 
@@ -361,7 +361,8 @@ showMyDB();
 //Task 07
 
 function calculateVolumeAndArea(edgeLength) {
-    if (typeof (edgeLength) !== 'number' || edgeLength === null || !Number.isInteger(edgeLength) || edgeLength === undefined || edgeLength <= 0) {
+    if (typeof (edgeLength) !== 'number' || edgeLength === null 
+    || !Number.isInteger(edgeLength) || edgeLength === undefined || edgeLength <= 0) {
 
         return `При вычислении произошла ошибка`;
 
