@@ -1,0 +1,27 @@
+.wrapper{
+
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+.box-one{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.box-two{
+    top: 300px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.box-three{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
